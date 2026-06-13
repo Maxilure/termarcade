@@ -12,7 +12,14 @@ No GPU, no 4K textures, no RGB — just pixels in your terminal and questionable
 
 ## Games 🎮
 
-- **Tetrominal** — Stack blocks, clear lines, try not to lose.
+- **Tetrominal** (currently the only game) — Stack blocks, clear lines, try not to lose.
+
+More games coming soon. Ideas on the horizon:
+- **Terminal Snake** — Eat, grow, don't hit the wall.
+- **Minesweep** — Click, think, pray.
+- **Flap** — Tap to fly, fail to breathe.
+- **Typestorm** — Words fall. Type fast or drown.
+- **Dunjon** — A dumb little roguelike about going deeper.
 
 ## Install 📦
 
@@ -69,6 +76,9 @@ Then run:
 ```bash
 termarcade
 ```
+
+> [!NOTE]
+> An AUR package is planned once the project has a bit more substance. For now, building from source is the way.
 
 ### Usage
 
