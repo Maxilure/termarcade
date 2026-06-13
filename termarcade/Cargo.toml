@@ -1,0 +1,9 @@
+[package]
+name = "termarcade"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.28"
+termarcade-core = { path = "../termarcade-core" }
+tetrominal = { path = "../tetrominal" }
