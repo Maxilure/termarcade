@@ -14,12 +14,7 @@ No GPU, no 4K textures, no RGB — just pixels in your terminal and questionable
 
 - **Tetrominal** (currently the only game) — Stack blocks, clear lines, try not to lose.
 
-More games coming soon. Ideas on the horizon:
-- **Terminal Snake** — Eat, grow, don't hit the wall.
-- **Minesweep** — Click, think, pray.
-- **Flap** — Tap to fly, fail to breathe.
-- **Typestorm** — Words fall. Type fast or drown.
-- **Dunjon** — A dumb little roguelike about going deeper.
+More games coming soon.
 
 ## Install 📦
 
