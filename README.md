@@ -22,13 +22,13 @@ More games coming soon.
 
 ### Prerequisites
 
-You need **Rust** and **Cargo**. Install them with [rustup](https://rustup.rs) (works on every distro):
+You need **Rust** and **Cargo**. Install them with [rustup](https://rustup.rs) (works on every OS):
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-Or use your distro's package manager:
+**Linux** — or use your distro's package manager:
 
 - **Debian / Ubuntu / Linux Mint**
   ```bash
@@ -62,6 +62,8 @@ Or use your distro's package manager:
 
 ### Build & install
 
+**Linux / macOS**
+
 ```bash
 git clone https://github.com/Maxilure/termarcade.git
 cd termarcade
@@ -73,6 +75,41 @@ Then run:
 ```bash
 termarcade
 ```
+
+**Windows**
+
+1. Install Rust via [rustup](https://rustup.rs) (accept the defaults).
+2. Open **PowerShell** in the termarcade folder.
+3. Run the automated setup script:
+
+   ```powershell
+   .\setup.ps1
+   ```
+
+   This will detect whether you have the MSVC linker (`link.exe`) or fall back to the GNU toolchain automatically, then build and install TermArcade.
+
+4. After setup completes, run from any terminal:
+
+   ```powershell
+   termarcade
+   ```
+
+   Or choose a launcher to double-click:
+
+   | Launcher | How to use |
+   |----------|------------|
+   | **`termarcade.bat`** | Double-click directly — opens PowerShell and runs the game. No compilation needed. |
+   | **`TermArcade.exe`** | Compile a native Windows `.exe` first (see below), then double-click. Silent launcher — no extra console window. |
+
+   **To compile the `.exe` launcher** (uses the built-in .NET C# compiler — no Visual Studio required):
+
+   ```powershell
+   .\compile-launcher.ps1
+   ```
+
+   This produces `TermArcade.exe` which you can double-click anytime.
+
+> **Note:** If the setup script reports that the MSVC linker is missing, it will automatically switch to the `x86_64-pc-windows-gnu` toolchain — no manual configuration needed. This is the recommended path unless you already have Visual Studio Build Tools installed.
 
 > [!NOTE]
 > An AUR package is planned once the project has a bit more substance. For now, building from source is the way.
