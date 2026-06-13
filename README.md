@@ -1,8 +1,8 @@
-# termarcade
+# termarcade 🕹️
 
-A quick terminal arcade to waste your time.
+A terminal arcade built for one thing: wasting your time in style.
 
-No fancy graphics, no bloat — just classic minigames running in your terminal.
+No GPU, no 4K textures, no RGB — just pixels in your terminal and questionable life choices.
 
 ## Screenshots
 
@@ -10,11 +10,11 @@ No fancy graphics, no bloat — just classic minigames running in your terminal.
 
 ![Tetrominal gameplay](screenshots/tetrominal.png)
 
-## Games
+## Games 🎮
 
 - **Tetrominal** — Stack blocks, clear lines, try not to lose.
 
-## Install
+## Install 📦
 
 ### Prerequisites
 
@@ -81,6 +81,6 @@ termarcade list             List available games
 termarcade -h               Show this help
 ```
 
-## License
+## License ⚖️
 
 See [LICENSE](LICENSE).
