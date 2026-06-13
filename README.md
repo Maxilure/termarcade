@@ -8,6 +8,8 @@ No fancy graphics, no bloat — just classic minigames running in your terminal.
 
 ![termarcade main menu](screenshots/menu.png)
 
+![Tetrominal gameplay](screenshots/tetrominal.png)
+
 ## Games
 
 - **Tetrominal** — Stack blocks, clear lines, try not to lose.
