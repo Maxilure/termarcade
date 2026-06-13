@@ -4,6 +4,10 @@ A quick terminal arcade to waste your time.
 
 No fancy graphics, no bloat — just classic minigames running in your terminal.
 
+## Screenshots
+
+![termarcade main menu](screenshots/menu.png)
+
 ## Games
 
 - **Tetrominal** — Stack blocks, clear lines, try not to lose.
