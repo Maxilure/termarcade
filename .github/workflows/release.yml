@@ -1,0 +1,57 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+jobs:
+  build-windows:
+    name: Windows (Experimental)
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: powershell
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+
+      - name: Build
+        run: cargo build --release -p termarcade
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: termarcade-x86_64-windows
+          path: target/release/termarcade.exe
+          compression-level: 0
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          name: ${{ github.ref_name }} — Windows support (Experimental)
+          body: |
+            ## Windows support (Experimental)
+
+            Pre-built binary for Windows x86_64.
+
+            ### How to run
+
+            1. Download `termarcade.exe` below
+            2. Open PowerShell in the download folder
+            3. Run `.\termarcade.exe`
+
+            Or double-click `termarcade.exe` directly.
+
+            ### Troubleshooting
+
+            - If you get a SmartScreen warning, click "More info" → "Run anyway"
+            - Windows Terminal or Windows Terminal Preview recommended for best experience
+          files: |
+            target/release/termarcade.exe
+          draft: false
+          prerelease: true

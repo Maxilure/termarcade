@@ -1,0 +1,4 @@
+[target.x86_64-pc-windows-gnullvm]
+linker = "clang"
+rustflags = ["-C", "link-args=-fuse-ld=lld"]
+runner = "wine"
